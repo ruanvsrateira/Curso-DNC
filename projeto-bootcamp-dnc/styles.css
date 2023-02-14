@@ -266,3 +266,57 @@ footer .line-2  a:first-child {
 footer .line-2 a:hover {
     color: var(--silver);
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    #main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu a {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+
+    #main button {
+        width: 100%;
+        margin: 0;
+    }
+
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        padding: 0 15px;
+    }
+
+    form {
+        width: 95%;
+        font-size: 17px;
+    }
+
+    .checkbox-items label {
+        font-size: 15px;
+    }
+
+    footer .line-1 {
+        flex-direction: column;
+    }
+
+    footer .address {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+}
