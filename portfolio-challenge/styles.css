@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --font-default: 'Poppins';
+    --light-color: #E5E5E5;
+    --dark-color: #070F18;
+    --black-color: #000000;
+    --blue-color: #1F7CFF;
+    --silver-color: #575455;
+    --red-color: #F75C4E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-default);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+#main-container {
+    width: 80%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+nav.navigation-bar {
+    width: 100%;
+    height: 100px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    gap: 15px;
+}
+
+nav.navigation-bar div h1 {
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+nav div a {
+    font-weight: 400;
+    font-size: 18px ;
+}
+
+nav div a:hover {
+    color: var(--silver-color)
+}
+
+nav div:first-child {
+    justify-content: left;
+}
+
+.apresentation-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.apresentation-box div {
+    width: 50%;
+    display: flex;
+    justify-content: space;
+    align-items: center;
+}
+
+.apresentation-box div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.apresentation-box div:first-child h1{
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.apresentation-box div:first-child p {
+    color: var(--silver-color);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.apresentation-box div:first-child button {
+    border: none;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+
+    background-color: var(--blue-color);
+
+    width: 180px;
+    height: 48px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.apresentation-box div:first-child button:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    transition: 300ms;
+}
+
+.apresentation-box div:last-child img {
+    width: 90%;
+    border-radius: 40px;
+}
+
+.more-info {
+    width: 95%;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.more-info img {
+    width: 87px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.my-services-container {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-services-container h2 {
+    color: var(--red-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.my-services-container h1 {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--black-color);
+}
+
+.my-services-container p {
+    margin-top: 20px;
+    color: var(--silver-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.my-services-container div {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-services-container div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-services-container img {
+    width: 60px;
+    height: 60px;
+}
+
+.my-services-container div div h1{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--dark-color);
+    margin-top: 20px;
+}
+
+.my-services-container div div p {
+    margin-top: 0px;
+}
+
+.get-more-money-container {
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.get-more-money-container img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.get-more-money-container div, img {
+    width: 45%;
+}
+
+.get-more-money-container div h2 {
+    color: var(--red-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.get-more-money-container div h1 {
+    margin-top: 10px;
+
+    color: var(--black-color);
+    font-style: normal;
+    font-weight: 700;
+}
+
+.get-more-money-container div p {
+    margin-top: 20px;
+    color: var(--silver-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.get-more-money-container div form input {
+    border: none;
+
+    margin-top: 50px;
+
+    height: 48px;
+    width: 100%;
+    border-radius: 40px;
+    padding-left: 15px;
+}
+
+.get-more-money-container div form input::placeholder {
+    color: var(--silver-color);
+}
+
+.get-more-money-container div form button {
+    border: none;
+    background-color: var(--blue-color);
+    margin-top: 20px;
+    height: 48px;
+    width: 50%;
+    border-radius: 50px;
+
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.get-more-money-container div form button:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    transition: 300ms;
+}
+
+.know-my-work-container {
+    margin-top: 100px;
+}
+
+.know-my-work-container h2 {
+    color: var(--red-color);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.know-my-work-container h1 {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.know-my-work-container div {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.know-my-work-container div img {
+    width: 300px;
+    height: 225px;
+    cursor: pointer;
+}
