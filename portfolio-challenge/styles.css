@@ -99,6 +99,7 @@ nav div:first-child {
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 20px;
+    max-width: 78%;
 }
 
 .apresentation-box div:first-child button {
@@ -327,7 +328,7 @@ body {
     .apresentation-box div:first-child h1, p {
         text-align: center;
     }
-
+    
     .apresentation-box div:first-child div {
         width: 100%;
         display: flex;
