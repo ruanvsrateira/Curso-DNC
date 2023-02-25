@@ -217,6 +217,11 @@ main form input[type="submit"] {
         margin-top: 100px;
     }
 
+    main h2 {
+        width: 80%;
+        text-align: center;
+    }
+
     main form {
         width: 80%;
         margin-bottom: 100px;
