@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+:root { 
+    --silver: #757575;
+    --light-silver: #EAECE5;
+    --light-blue: #247BA0;
+    --dark-silver: #383838;
+    --dark-blue: #072735;
+    --fedback-background: #0C70F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+
+    font-family: 'Inter';
+}
+
+header {
+    background-image: url(./assets/images/background.png);
+
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+header img {
+    margin: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header .container {
+    margin-top: 50px;
+}
+
+header div h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+header div p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+section.details-course {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: var(--light-silver);
+}
+
+section.details-course div{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+section.details-course div div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+section.details-course p {
+    color: var(--dark-blue);
+}
+
+section.details-course img {
+    width: 34px;
+    background-size: auto;
+}
+
+section.learn-more {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+section.learn-more .video-container {
+    background-image: url(./assets/images/video-background.png);
+
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.learn-more .video-container img {
+    width: 80px;
+}
+
+section.learn-more h1 {
+    color: var(--light-blue);
+    font-weight: 700;
+    font-size: 32px;
+}
+
+section.learn-more p {
+    color: #383838;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section.learn-more div:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+section.learn-more div:last-child h1 {
+    margin-bottom: 24px;
+}
+
+section.feedback {
+    width: 100%;
+    background-color: var(--fedback-background);
+    padding: 80px 0px;
+}
+
+section.feedback div h1{
+    color: var(--light-silver);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.feedback-card-container {
+    margin-top: 64px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feedback-card-container .feedback-card {
+    background-color: #FFF;
+    width: 40%;
+    height: 172px;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feedback-card-container .feedback-card p {
+    color: #383838;
+}
+
+.feedback-card-container .feedback-card img {
+    width: 96px;
+    height: 96px;
+}
+
+.feedback-card-container .feedback-card p span {
+    font-weight: bold;
+    color: #383838;
+}
+
+section.start-now {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 0px;
+} 
+
+section.start-now h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #383838;
+}
+
+section.start-now button {
+    border: none;
+    width: 335px;
+    height: 56px;
+    background-color: var(--light-blue);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1050px) {
+    section.learn-more {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section.learn-more .video-container {
+        width: 80%;
+        background-size: cover;
+        background-repeat: none;
+    }
+
+    section.learn-more div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.learn-more h1 {
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    section.start-now h1 {
+        max-width: 80%;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 815px) {
+    
+    section.feedback .feedback-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.feedback .feedback-card-container .feedback-card {
+        width: 80%;
+    }
+
+    section.feedback .feedback-card-container .feedback-card span{
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    
+    section.details-course {
+        height: auto;
+    }
+
+    section.details-course div {
+        padding: 30px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
