@@ -40,12 +40,14 @@ header .container {
 header div h1 {
     font-size: 40px;
     font-weight: 400;
+    max-width: 50%;
 }
 
 header div p {
     font-size: 20px;
     font-weight: 400;
     margin-top: 32px;
+    max-width: 50%;
 }
 
 section.details-course {
@@ -86,6 +88,13 @@ section.learn-more {
     gap: 30px;
 }
 
+section.learn-more div:last-child {
+    width: 50%;
+}
+
+section.learn-more div:first-child {
+    width: 40%;
+}
 section.learn-more .video-container {
     background-image: url(./assets/images/video-background.png);
 
@@ -96,9 +105,6 @@ section.learn-more .video-container {
     align-items: center;
 }
 
-section.learn-more .video-container img {
-    width: 80px;
-}
 
 section.learn-more h1 {
     color: var(--light-blue);
@@ -197,24 +203,24 @@ section.start-now button {
 @media only screen and (max-width: 1050px) {
     section.learn-more {
         flex-direction: column;
-        width: 90%;
-    }
-
-    section.learn-more .video-container {
+        align-items: center;
         width: 80%;
-        background-size: cover;
-        background-repeat: none;
     }
 
     section.learn-more div {
-        width: 100%;
+        width: 100%!important;
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    section.learn-more .video-container {
+        background-size: cover;
     }
 
     section.learn-more h1 {
         text-align: center;
+        max-width: 80%;
+        margin: auto;
     }
 
     .container {
@@ -229,6 +235,18 @@ section.start-now button {
 }
 
 @media only screen and (max-width: 815px) {
+
+    header div:first-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div:last-child h1,p{
+        text-align: center;
+        margin: auto;
+        max-width: 100%;
+    }
     
     section.feedback .feedback-card-container {
         flex-direction: column;
@@ -241,6 +259,11 @@ section.start-now button {
 
     section.feedback .feedback-card-container .feedback-card span{
         margin-left: auto;
+    }
+
+    section.learn-more h1, p {
+        max-width: 90%;
+        margin: auto;
     }
 }
 
@@ -256,6 +279,18 @@ section.start-now button {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    section.learn-more .video-container {
+        width: 100%;
+    }
+
+    section.video-container img {
+        width: 100%;
+    }
+    
+    section.learn-more h1, p {
+        text-align: center;
     }
 
 }
