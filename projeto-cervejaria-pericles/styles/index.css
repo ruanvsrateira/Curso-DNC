@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.84);
+    color: #FFF;
+    font-family: "Raleway";
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+ 
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+.dialog-container {
+    background-color: #CA7900;
+    width: 80%;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-container img {
+    position: absolute;
+    margin-bottom: 220px;
+    width: 140px;
+}
+
+.dialog-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog-content {
+    position: relative  ;   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px;
+    align-items: center;
+    gap: 20px;
+}
+
+.dialog-container .dialog-content h2 {
+    font-weight: 400;
+}
+
+.dialog-container .dialog-content .buttons-container-confirmation button {
+    width: 120px;
+    height: 40px;
+    border: 5px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+    font-family: "Raleway";
+    font-weight: 600;
+    border-radius: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.dialog-container .dialog-content .buttons-container-confirmation {
+    display: flex;
+    gap: 50px;
+}

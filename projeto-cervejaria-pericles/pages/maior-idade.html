@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Idade</title>
+    <link rel="stylesheet" href="../styles/maior-idade.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>    
+                <a href="#">A Cervejaria</a>
+                <a href="#">Nossas Cervejas</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div>
+                <a href="#">
+                    Meu carrinho 
+                    <img 
+                        src="../assets/cart-icon.png" 
+                        alt="Ícone Carinho de compras"
+                    />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dialog-container">
+
+        <img src="../assets/logo.png" alt="Logo">
+
+        <p>
+            Olá! Gostaria de te dar boas vindas à Cervejaria do Pericles. <br />
+            Escolha a bebida que mais te agrada:
+        </p>
+
+    </section>
+
+    <section class="products-container">
+
+        <div>
+            <img src="../assets/product-1.png" alt="Vinho tinto">
+            <p>
+                Vinho tinto <br />
+                R$ 80,00
+            </p>
+            <button onclick="comprarProduto(80)">Comprar</button>
+        </div>
+
+        <div>
+            <img src="../assets/product-2.png" alt="Cerveja Heineken">
+            <p>
+                Cerveja Heineken <br />
+                R$ 20,00
+            </p>
+            <button onclick="comprarProduto(20)">Comprar</button>
+        </div>
+
+        <div>
+            <img src="../assets/product-3.png" alt="Refrigerante Guaraná">
+            <p>
+                Refrigerante guaraná <br />
+                R$ 10,00
+            </p>
+            <button onclick="comprarProduto(10)">Comprar</button>
+        </div>
+
+    </section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

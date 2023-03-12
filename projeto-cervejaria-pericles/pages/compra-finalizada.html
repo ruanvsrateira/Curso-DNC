@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="../styles/compra-finalizada.css">
+</head>
+<body onload="mostraValorCompra()">
+    
+    <header>
+        <nav>
+            <div>    
+                <a href="#">A Cervejaria</a>
+                <a href="#">Nossas Cervejas</a>
+                <a href="#">Delivery</a>
+            </div>
+            <div>
+                <a href="#">
+                    Meu carrinho 
+                    <img 
+                        src="../assets/cart-icon.png" 
+                        alt="Ícone Carinho de compras"
+                    />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dialog-container">
+        
+        <p>
+            
+            Olá! <br /> total a ser pago é:
+            <span class="price"></span>
+        </p>
+
+        <button onclick="backPage()">Voltar</button>
+    </section>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
