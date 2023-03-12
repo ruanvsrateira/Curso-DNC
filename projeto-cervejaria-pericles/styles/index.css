@@ -87,3 +87,25 @@ main h1 {
     display: flex;
     gap: 50px;
 }
+
+@media only screen and (max-width: 460px) {
+
+    .dialog-container img {
+        margin-top: -80px;
+    }
+
+    .buttons-container-confirmation {
+        gap: 20px !important;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .buttons-container-confirmation button {
+        width: 100% !important;
+    }
+
+    .dialog-container h2 {
+        text-align: center;
+    }
+
+}
